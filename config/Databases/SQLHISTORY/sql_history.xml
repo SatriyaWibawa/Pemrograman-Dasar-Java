@@ -1,0 +1,62 @@
+<history>
+    <sql date='1362213737989' url='jdbc:mysql://localhost:3306/mysql'>
+        select * from db_fahmi.data_file
+    </sql>
+    <sql date='1362208659442' url='jdbc:mysql://localhost:3306/mysql'>
+        select * from db_fahmi.data_file
+    </sql>
+    <sql date='1362208648095' url='jdbc:mysql://localhost:3306/mysql'>
+        select * from db_fahmi.file_reject
+    </sql>
+    <sql date='1362202734752' url='jdbc:mysql://localhost:3306/mysql'>
+        CREATE DATABASE `db_test`
+    </sql>
+    <sql date='1362202734799' url='jdbc:mysql://localhost:3306/mysql'>
+        USE `db_test`
+    </sql>
+    <sql date='1362202734987' url='jdbc:mysql://localhost:3306/mysql'>
+        DROP TABLE IF EXISTS `hobby`
+    </sql>
+    <sql date='1362202735172' url='jdbc:mysql://localhost:3306/mysql'>
+        CREATE TABLE `hobby` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama_hobby` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8
+    </sql>
+    <sql date='1362202735238' url='jdbc:mysql://localhost:3306/mysql'>
+        insert  into `hobby`(`id`,`nama_hobby`) values (1,&apos;membaca&apos;),(2,&apos;olahraga&apos;),(3,&apos;menulis&apos;),(4,&apos;travelling&apos;)
+    </sql>
+    <sql date='1362202735306' url='jdbc:mysql://localhost:3306/mysql'>
+        DROP TABLE IF EXISTS `karyawan`
+    </sql>
+    <sql date='1362202735440' url='jdbc:mysql://localhost:3306/mysql'>
+        CREATE TABLE `karyawan` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nip` varchar(5) DEFAULT NULL,
+  `nama` varchar(100) DEFAULT NULL,
+  `jenkel` varchar(2) DEFAULT NULL,
+  `alamat` text,
+  `no_telp` varchar(50) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8
+    </sql>
+    <sql date='1362202735482' url='jdbc:mysql://localhost:3306/mysql'>
+        insert  into `karyawan`(`id`,`nip`,`nama`,`jenkel`,`alamat`,`no_telp`,`email`) values (10,&apos;001-P&apos;,&apos;oqi&apos;,&apos;p&apos;,&apos;sulaiman&apos;,&apos;100202&apos;,&apos;oqi666@ymail.com&apos;),(11,&apos;002-W&apos;,&apos;nao&apos;,&apos;w&apos;,&apos;pondok maharta&apos;,&apos;087766&apos;,&apos;nao.yellow@yahoo.com&apos;),(12,&apos;003-P&apos;,&apos;kar 1&apos;,&apos;p&apos;,&apos;s&apos;,&apos;23232&apos;,&apos;oqifaruoqi@gmail.com&apos;),(13,&apos;004-W&apos;,&apos;kalss 2&apos;,&apos;w&apos;,&apos;b&apos;,&apos;100202&apos;,&apos;nao.yellow@yahoo.com&apos;),(14,&apos;005-P&apos;,&apos;kar 2&apos;,&apos;p&apos;,&apos;sds&apos;,&apos;100202&apos;,&apos;nao.yellow@yahoo.com&apos;)
+    </sql>
+    <sql date='1362202735517' url='jdbc:mysql://localhost:3306/mysql'>
+        DROP TABLE IF EXISTS `karyawan_hobby`
+    </sql>
+    <sql date='1362202735627' url='jdbc:mysql://localhost:3306/mysql'>
+        CREATE TABLE `karyawan_hobby` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `karyawan_id` int(11) DEFAULT NULL,
+  `hobby_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8
+    </sql>
+    <sql date='1362202735673' url='jdbc:mysql://localhost:3306/mysql'>
+        insert  into `karyawan_hobby`(`id`,`karyawan_id`,`hobby_id`) values (5,10,1),(6,10,3),(12,11,1),(13,11,3),(14,11,4),(15,12,1),(16,13,1),(17,13,3),(18,14,2),(19,14,3)
+    </sql>
+</history>

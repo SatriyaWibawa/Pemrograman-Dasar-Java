@@ -1,0 +1,5 @@
+run:
+Input jumlah siswa:10
+Input jumlah kelompok:0
+Jumlah siswa per kelompok Infinity
+BUILD SUCCESSFUL (total time: 5 seconds)
